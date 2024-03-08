@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --txt_principal: #ffffff;
+  --btn_de_acao: #ffbf00;
+  --txt_btn_acao: #332200;
+  --background: #000;
+  --subtitulo: #b2b2b2;
+}
+
+body {
+  max-width: 1000px;
+  width: 100%;
+  background: var(--background);
+  margin: 0 auto;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin-top: 20px;
+}
+.logo,
+.menu-item,
+.info h1 {
+  color: var(--txt_principal);
+}
+.logo {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.menu-item {
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+}
+.menu-item:hover {
+  text-decoration: underline;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+}
+.info {
+  width: 550px;
+  /* background-color: aqua; */
+}
+.info h1 {
+  font-size: 4rem;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.info p {
+  color: var(--subtitulo);
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.btn {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  background-color: var(--btn_de_acao);
+  color: var(--txt_btn_acao);
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+.btn:hover {
+  opacity: 1;
+}
+.image {
+  margin-top: 30px;
+  width: 420px;
+  background-image: url("../image/bike.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
